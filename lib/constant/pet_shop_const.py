@@ -1,0 +1,2 @@
+class PetStatus:
+    SOLD = "sold"
