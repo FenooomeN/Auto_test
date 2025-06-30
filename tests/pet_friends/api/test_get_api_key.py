@@ -19,6 +19,7 @@ def time_delta():
     end_time = datetime.now()
     print (f"\nТест шел: {end_time - start_time}")
 
+
 class TestApiKey:
 
     def test_get_api_key_for_valid_user(self):
