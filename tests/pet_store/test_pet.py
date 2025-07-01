@@ -6,7 +6,7 @@ pet_store = PetStore()
 class TestPet():
 
     def test_get_sold_pets(self, status=PetStatus.SOLD):
-        'Проверяем что методом GET pet_find_by_status со параметром Sold, получаем только проданых петомцев'
+        """Проверяем что методом GET pet_find_by_status со параметром Sold, получаем только проданных питомцев"""
         resp = pet_store.get_pet_find_by_status(status=status)
         for r in resp.json():
             assert r['status'] == PetStatus.SOLD
